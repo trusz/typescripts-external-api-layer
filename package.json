@@ -1,0 +1,14 @@
+{
+    "name": "external-api-layer",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Tamás Rusz",
+    "license": "MIT",
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --platform=node --target=node14.9"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.1",
+        "runtypes": "^5.0.2"
+    }
+}
