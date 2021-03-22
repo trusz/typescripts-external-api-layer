@@ -5,10 +5,10 @@
     "author": "Tamás Rusz",
     "license": "MIT",
     "scripts": {
-        "build-start": "yarn type-check && yarn build && yarn start",
-        "type-check": "yarn tsc --noEmit --project .",
-        "build": "esbuild src/index.ts --bundle --platform=node --target=node14.9 --outfile=build/app.js",
-        "start": "node ./build/app.js"
+        "build-start": "yarn build && yarn start",
+        "build": "yarn _type-check && esbuild src/main.ts --bundle --platform=node --target=node14.9 --outfile=build/app.js",
+        "start": "node ./build/app.js",
+        "_type-check": "yarn tsc --noEmit --project ."
     },
     "dependencies": {},
     "devDependencies": {
